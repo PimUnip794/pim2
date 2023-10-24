@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+
+int main(int arg, char *argv[]){
+    setlocale(LC_ALL, "portuguese");
+    int opcao;
+    int nota;
+
+
+    do{
+        system("cls");
+        printf("\n  #----------    BEM-VINDO, ESCOLHA A OBRA A SER VISITADA   ----------#");
+        printf("\n  |                                                                   |");
+        printf("\n  |                                                                   |");
+        printf("\n  |               1 -  100 ANOS DA SEMANA DA ARTE MODERNA.            |");
+        printf("\n  |                                                                   |");
+        printf("\n  |               2 -  150 ANOS DE SANTOS DUMONT.                     |");
+        printf("\n  |                                                                   |");
+        printf("\n  |               3 -  JOGOS OLIMPICOS DE PARIS 2024.                 |");
+        printf("\n  |                                                                   |");
+        printf("\n  |               4 -  IOT('INTERNET DAS COISAS')EM NOSSAS VIDAS.     |");
+        printf("\n  |                                                                   |");
+        printf("\n  |               0 -  NENHUMA DAS OPÇÔES.                            |");
+        printf("\n  |___________________________________________________________________|\n");
+        printf("\n\n   DIGITE A OPÇÃO DESEJADA: ");
+        scanf("%d", &opcao);
+
+        switch(opcao){
+            case 1:
+               printf ("https://www.ufmg.br/espacodoconhecimento/100-anos-da-semana-de-arte-moderna-celebracao-ou-reflexao/");
+               getch();
+            break;
+            case 2:
+                 printf ("https://www.fab.mil.br/noticias/mostra/41291/150%20ANOS%20DE%20SANTOS%20DUMONT%20-%20Exposi%C3%A7%C3%A3o%20em%20homenagem%20aos%20150%20anos%20de%20Santos%20Dumont%20%C3%A9%20inaugurada%20no%20STM");
+                 getch();
+            break;
+            case 3:
+             printf ("https://olympics.com/pt/olympic-games/paris-2024");
+             getch();
+            break;
+            case 4:
+             printf(" https://www.weg.net/tomadas/blog/tecnologia/o-que-e-iot-e-como-ela-ira-impactar-o-dia-dia-em-casa/");
+             getch();
+            break;
+            default:
+                printf(" [!] OPÇÃO INVÁLIDA!  PRESSIONE ENTER PARA CONTINUAR...");
+                getch();
+            break;
+        }
+    }while(opcao !=0);
+
+
+    return 0;
+}
